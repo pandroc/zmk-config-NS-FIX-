@@ -11,18 +11,18 @@
 
 / {
     behaviors {
-        Default_Return: Default_Return {
+        Lower_TG0: Lower_TG0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DEFAULT_RETURN";
+            label = "LOWER_TG0";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 0>;
         };
 
-        Toggle_layer_3: Toggle_layer_3 {
+        Raise_TG3: Raise_TG3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TOGGLE_LAYER_3";
+            label = "RAISE_TG3";
             #binding-cells = <0>;
-            bindings = <&mo 2>;
+            bindings = <&mo 2>, <&Raise_TG3>;
         };
     };
 
@@ -37,10 +37,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp F     &kp P       &kp B        &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &Raise_TG3  &kp SPACE    &kp RET  &Lower_TG0  &kp RALT
             >;
         };
 
