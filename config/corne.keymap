@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RAISE_TG3";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&Raise_TG3>;
+            bindings = <&mo 2>, <&tog 3>;
         };
     };
 
