@@ -15,7 +15,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DEFAULT_RETURN";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&tog 0>;
+        };
+
+        Toggle_layer_3: Toggle_layer_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TOGGLE_LAYER_3";
+            #binding-cells = <0>;
+            bindings = <&mo 2>;
         };
     };
 
@@ -80,11 +87,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        QWRTY {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
     };
 };
 
