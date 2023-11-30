@@ -46,6 +46,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &Raise_TG3  &kp SPACE    &kp RET  &Lower_TG0  &kp RALT
             >;
+
+            label = "Default";
         };
 
         QWRTY {
