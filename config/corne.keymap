@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "E_N3";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp KP_NUMBER_3>;
+            bindings = <&kp E>, <&kp NUMBER_3>;
 
             tapping-term-ms = <200>;
         };
@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "R_N4";
             #binding-cells = <0>;
-            bindings = <&kp R>, <&kp KP_NUMBER_4>;
+            bindings = <&kp R>, <&kp NUMBER_4>;
 
             tapping-term-ms = <200>;
         };
@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "T_N5";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp KP_NUMBER_5>;
+            bindings = <&kp T>, <&kp N5>;
 
             tapping-term-ms = <200>;
         };
@@ -97,6 +97,96 @@
             label = "B_N5";
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp N5>;
+
+            tapping-term-ms = <200>;
+        };
+
+        Y_N6: Y_N6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Y_N6";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <200>;
+        };
+
+        J_N6: J_N6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "J_N6";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <200>;
+        };
+
+        U_N7: U_N7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U_N7";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp N7>;
+
+            tapping-term-ms = <200>;
+        };
+
+        L_N7: L_N7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_N7";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp N7>;
+
+            tapping-term-ms = <200>;
+        };
+
+        I_N8: I_N8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I_N8";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp N8>;
+
+            tapping-term-ms = <200>;
+        };
+
+        U_N8: U_N8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U_N8";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp N8>;
+
+            tapping-term-ms = <200>;
+        };
+
+        O_N9: O_N9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O_N9";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp N9>;
+
+            tapping-term-ms = <200>;
+        };
+
+        Y_N9: Y_N9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Y_N9";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp N9>;
+
+            tapping-term-ms = <200>;
+        };
+
+        P_N0: P_N0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P_N0";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp N0>;
+
+            tapping-term-ms = <200>;
+        };
+
+        SemiCol_N0: SemiCol_N0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SEMICOL_N0";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp N0>;
 
             tapping-term-ms = <200>;
         };
@@ -113,9 +203,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &Q_N1  &W_N2  &F_N3     &P_N4       &B_N5        &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &Q_N1  &W_N2  &F_N3     &P_N4       &B_N5        &J_N6    &L_N7       &U_N8      &Y_N9    &SemiCol_N0  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O        &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH     &kp ESC
                          &kp LGUI  &Raise_TG3  &kp SPACE    &kp RET  &Lower_TG0  &kp RALT
             >;
 
@@ -124,7 +214,7 @@
 
         QWRTY {
             bindings = <
-&kp TAB    &Q_N1  &W_N2  &E_N3     &B_N5   &T_N5        &kp Y      &kp U   &kp I          &kp O    &kp P     &kp BSPC
+&kp TAB    &Q_N1  &W_N2  &E_N3     &B_N5   &L_N7        &Y_N6      &U_N7   &I_N8          &O_N9    &P_N0     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G        &kp H      &kp J   &kp K          &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp N      &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &trans  &kp SPACE    &kp ENTER  &trans  &kp RIGHT_ALT
