@@ -28,6 +28,62 @@
 
             tapping-term-ms = <200>;
         };
+
+        Q_N1: Q_N1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Q_N1";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp KP_NUMBER_1>;
+        };
+
+        W_N2: W_N2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W_N2";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp KP_NUMBER_2>;
+        };
+
+        E_N3: E_N3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_N3";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp KP_NUMBER_3>;
+        };
+
+        F_N3: F_N3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F_N3";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp KP_NUMBER_3>;
+        };
+
+        R_N4: R_N4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_N4";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp KP_NUMBER_4>;
+        };
+
+        P_N4: P_N4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P_N4";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp KP_NUMBER_4>;
+        };
+
+        T_N5: T_N5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T_N5";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp KP_NUMBER_5>;
+        };
+
+        B_N5: B_N5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "B_N5";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp KP_NUMBER_5>;
+        };
     };
 
     keymap {
@@ -41,7 +97,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P       &kp B        &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp TAB    &Q_N1  &W_N2  &F_N3     &P_N4       &B_N5        &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp BSPC
 &kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O     &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &Raise_TG3  &kp SPACE    &kp RET  &Lower_TG0  &kp RALT
@@ -52,7 +108,7 @@
 
         QWRTY {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T        &kp Y      &kp U   &kp I          &kp O    &kp P     &kp BSPC
+&kp TAB    &Q_N1  &W_N2  &E_N3     &B_N5   &T_N5        &kp Y      &kp U   &kp I          &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G        &kp H      &kp J   &kp K          &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp N      &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &trans  &kp SPACE    &kp ENTER  &trans  &kp RIGHT_ALT
