@@ -34,6 +34,8 @@
             label = "Q_N1";
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp KP_NUMBER_1>;
+
+            tapping-term-ms = <200>;
         };
 
         W_N2: W_N2 {
@@ -41,6 +43,8 @@
             label = "W_N2";
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp KP_NUMBER_2>;
+
+            tapping-term-ms = <200>;
         };
 
         E_N3: E_N3 {
@@ -48,6 +52,8 @@
             label = "E_N3";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp KP_NUMBER_3>;
+
+            tapping-term-ms = <200>;
         };
 
         F_N3: F_N3 {
@@ -55,6 +61,8 @@
             label = "F_N3";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp KP_NUMBER_3>;
+
+            tapping-term-ms = <200>;
         };
 
         R_N4: R_N4 {
@@ -62,6 +70,8 @@
             label = "R_N4";
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp KP_NUMBER_4>;
+
+            tapping-term-ms = <200>;
         };
 
         P_N4: P_N4 {
@@ -69,6 +79,8 @@
             label = "P_N4";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp KP_NUMBER_4>;
+
+            tapping-term-ms = <200>;
         };
 
         T_N5: T_N5 {
@@ -76,6 +88,8 @@
             label = "T_N5";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp KP_NUMBER_5>;
+
+            tapping-term-ms = <200>;
         };
 
         B_N5: B_N5 {
@@ -83,6 +97,8 @@
             label = "B_N5";
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp KP_NUMBER_5>;
+
+            tapping-term-ms = <200>;
         };
     };
 
