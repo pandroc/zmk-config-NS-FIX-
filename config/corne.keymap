@@ -214,7 +214,7 @@
 
         QWRTY {
             bindings = <
-&kp TAB    &Q_N1  &W_N2  &E_N3     &B_N5   &L_N7        &Y_N6      &U_N7   &I_N8          &O_N9    &P_N0     &kp BSPC
+&kp TAB    &Q_N1  &W_N2  &E_N3     &R_N4   &T_N5        &Y_N6      &U_N7   &I_N8          &O_N9    &P_N0     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G        &kp H      &kp J   &kp K          &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp N      &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &trans  &kp SPACE    &kp ENTER  &trans  &kp RIGHT_ALT
