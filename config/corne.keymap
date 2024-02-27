@@ -213,15 +213,11 @@
 
         W_N2-7:
 
-        W_N2-7 {
-            compatible = "zmk,behavior-tap-dance";
-        };
+        W_N2-7 { compatible = "zmk,behavior-tap-dance"; };
 
         Q_N1-6:
 
-        Q_N1-6 {
-            compatible = "zmk,behavior-tap-dance";
-        };
+        Q_N1-6 { compatible = "zmk,behavior-tap-dance"; };
     };
 
     keymap {
@@ -235,9 +231,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &Q_N1  &W_N2  &F_N3     &P_N4       &B_N5        &J_N6    &L_N7       &U_N8      &Y_N9    &SemiCol_N0  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O        &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH     &kp ESC
+&kp TAB    &kp Q  &kp W  &kp F     &kp P       &kp B        &kp J    &kp L       &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T       &kp G        &kp M    &kp N       &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D       &kp V        &kp K    &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &Raise_TG3  &kp SPACE    &kp RET  &Lower_TG0  &kp RALT
             >;
 
@@ -246,10 +242,10 @@
 
         QWRTY {
             bindings = <
-&kp TAB    &Q_N1-6  &W_N2-7  &E_N3-8   &R_N4-9  &T_N5-0      &Y_N6      &U_N7   &I_N8          &O_N9    &P_N0     &kp BSPC
-&kp LCTRL  &kp A    &kp S    &kp D     &kp F    &kp G        &kp H      &kp J   &kp K          &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z    &kp X    &kp C     &kp V    &kp B        &kp N      &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
-                             &kp LGUI  &trans   &kp SPACE    &kp ENTER  &trans  &kp RIGHT_ALT
+&kp TAB    &Q_N1  &W_N2  &E_N3     &R_N4   &T_N5        &Y_N6      &U_N7   &I_N8          &O_N9    &P_N0     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G        &kp H      &kp J   &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp N      &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &trans  &kp SPACE    &kp ENTER  &trans  &kp RIGHT_ALT
             >;
 
             label = "QWRTY";
@@ -289,11 +285,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+&nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
